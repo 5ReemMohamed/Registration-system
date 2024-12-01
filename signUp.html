@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SignUp Page</title>
+</head>
+<body>
+    <main>
+        <section class="signUp-section">
+            <div class="row m-0">
+                <div class="col-md-6">
+                   <div class="inner img">
+                    <img src="imgs/signup.jpg" class="w-75 d-block" alt="">
+                   </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="inner content p-4 text-center">
+                    <h2>Registration System</h2>
+                    <form id="signupForm" action="" class="d-flex gap-3 flex-column w-75 mx-auto mt-3">
+                        <input
+                        type="text" 
+                        id="userInput" 
+                        placeholder="Enter Your Name"  
+                        class="form-control w-100"
+                        value=""
+                        name="userName"
+                        >
+                        <p id="usernameError" class="d-none my-2 text-danger"></p>
+                         <input
+                        type="email" 
+                        id="emailInput" 
+                        placeholder="Enter Your Email"  
+                        class="form-control w-100"
+                        value=""
+                        name="userEmail"
+                        >
+                         <p id="emailError" class="d-none my-2 text-danger"></p>
+                        <input
+                        type="password" 
+                        id="passwordInput" 
+                        placeholder="Enter Your Password"  
+                        class="form-control w-100"
+                        value=""
+                        >
+                        <p id="passwordError" class="d-none my-2 text-danger"></p>
+                        <p id="errorMessage" class="d-none my-2 text-danger"></p>
+                        <button type="submit" id="signUp" class="btn submit-btn">Sign Up</button>
+                        <p class="singup">You have an account? <a href="index.html">Signin</a></p>
+                        <p class="continue">Or continue with</p>
+                        <div class="column d-flex justify-content-center">
+                        <div class="icons">
+                        <div class="icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-google"></i></a></div>
+                        <div class="icon"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        </div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
